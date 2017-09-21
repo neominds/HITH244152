@@ -1,0 +1,54 @@
+ 6 5 4 3 2 1
+auto-booting...
+
+
+boot device          : emac
+unit number          : 1 
+processor number     : 0 
+host name            : host
+file name            : vxWorks
+inet on ethernet (e) : 192.168.3.102:FFFFFF00
+host inet (h)        : 192.168.3.200
+gateway inet (g)     : 192.168.3.200
+user (u)             : user
+ftp password (pw)    : user
+flags (f)            : 0x0 
+target name (tn)     : vxTarget
+
+Loading... 1912560 + 300 + 230728
+Starting at 0x100000...
+
+Target Name: vxTarget 
+ 
+ _________            _________
+ \77777777\          /77777777/
+  \77777777\        /77777777/
+   \77777777\      /77777777/
+    \77777777\    /77777777/
+     \77777777\   \7777777/
+      \77777777\   \77777/              VxWorks 7
+       \77777777\   \777/
+        \77777777\   \7/     Core Kernel version: 1.2.2.1
+         \77777777\   -      Build date: Sep 20 2017 07:00:47
+          \77777777\
+           \7777777/         Copyright Wind River Systems, Inc.
+            \77777/   -                 1984-2017
+             \777/   /7\
+              \7/   /777\
+               -   -------
+
+                   Board: Altera SOCFPGA Cyclone V
+          OS Memory Size: ~1023MB
+        ED&R Policy Mode: Permanently Deployed
+
+
+ Adding 6757 symbols for standalone.
+
+-> ifconfig "emac0 192.168.3.103 netmask 255.255.255.0 up"
+value = 0 = 0x0
+-> bs
+Broadcast server listening on port 7001
+<<< [192.168.3.102:50147]: msg001-tets message 202c2
+>>> [192.168.3.102:50147]: msg001-reply from bserver
+<<< [192.168.3.101:52677]: msg001-test
+>>> [192.168.3.101:52677]: msg002-reply from bserver

@@ -1,0 +1,99 @@
+
+U-Boot SPL 2013.01.01 (Feb 05 2014 - 08:46:12)
+BOARD : Altera SOCFPGA Cyclone V Board
+SDRAM: Initializing MMR registers
+SDRAM: Calibrating PHY
+SEQ.C: Preparing to start memory calibration
+SEQ.C: CALIBRATION PASSED
+SDRAM: ECC Enabled
+ALTERA DWMMC: 0
+reading bootloader.bin
+reading bootloader.bin
+emac1: warning: using hard-coded address 00:07:ed:00:00:01
+
+
+
+
+
+
+
+
+
+
+
+                            VxWorks System Boot
+
+
+Copyright 1984-2014  Wind River Systems, Inc.
+
+
+
+
+
+CPU: Altera SoC Gen 5 A9
+Version: VxWorks 6.9
+BSP version: 6.9/4
+Creation date: Nov 12 2014 10:27:47
+
+
+
+
+Press any key to stop auto-boot...
+ 7 6 5 4 3 2 1
+auto-booting...
+
+
+boot device          : emac
+unit number          : 1 
+processor number     : 0 
+host name            : host
+file name            : vxWorks
+inet on ethernet (e) : 192.168.3.102:FFFFFF00
+host inet (h)        : 192.168.3.200
+gateway inet (g)     : 192.168.3.200
+user (u)             : user
+ftp password (pw)    : user
+flags (f)            : 0x0 
+target name (tn)     : vxTarget
+
+Loading... 1912560 + 300 + 230728
+Starting at 0x100000...
+
+Target Name: vxTarget 
+ 
+ _________            _________
+ \77777777\          /77777777/
+  \77777777\        /77777777/
+   \77777777\      /77777777/
+    \77777777\    /77777777/
+     \77777777\   \7777777/
+      \77777777\   \77777/              VxWorks 7
+       \77777777\   \777/
+        \77777777\   \7/     Core Kernel version: 1.2.2.1
+         \77777777\   -      Build date: Sep 20 2017 07:00:47
+          \77777777\
+           \7777777/         Copyright Wind River Systems, Inc.
+            \77777/   -                 1984-2017
+             \777/   /7\
+              \7/   /777\
+               -   -------
+
+                   Board: Altera SOCFPGA Cyclone V
+          OS Memory Size: ~1023MB
+        ED&R Policy Mode: Permanently Deployed
+
+
+ Adding 6757 symbols for standalone.
+
+-> ifconfig "emac0 192.168.3.5 netmask 255.255.255.0 up"
+value = 0 = 0x0
+-> bc("192.168.3.255",7001)
+Ready>test msg for tc302
+>>> [192.168.3.255:7001] msg001-test msg for tc302
+<<< [192.168.3.102:7001] msg001-reply from bserver
+<<< [192.168.3.101:7001] msg001-reply from bserver
+Ready>test 2
+>>> [192.168.3.255:7001] msg002-test 2
+<<< [192.168.3.102:7001] msg002-reply from bserver
+<<< [192.168.3.101:7001] msg002-reply from bserver
+Ready>

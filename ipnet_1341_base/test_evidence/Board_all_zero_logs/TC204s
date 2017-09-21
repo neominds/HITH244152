@@ -1,0 +1,10 @@
+ifconfig "emac0 192.168.3.5 netmask 255.255.255.0 up"
+value = 0 = 0x0
+-> bs
+Broadcast server listening on port 7001
+<<< [192.168.3.101:50362]: msg001-test msg fromc1
+>>> [192.168.3.101:50362]: msg001-reply from bserver
+<<< [192.168.3.101:50362]: msg002-hello
+>>> [192.168.3.101:50362]: msg002-reply from bserver
+<<< [192.168.3.101:50362]: msg003-hi
+>>> [192.168.3.101:50362]: msg003-reply from bserver
