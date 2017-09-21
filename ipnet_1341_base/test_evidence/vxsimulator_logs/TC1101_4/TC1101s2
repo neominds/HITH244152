@@ -1,0 +1,103 @@
+Checking License...OK
+Virtual  Base Address: 0x60000000
+Virtual  Top  Address: 0x98000000    Virtual  Size: 0x38000000 (896Mb)
+Physical Base Address: 0x60000000
+Physical Top  Address: 0x68000000    Physical Size: 0x08000000 (128Mb)
+Loading...
+0x3c3fe4 + 0x424ac
+Instantiating /ram0 as rawFs,  device = 0x1
+Formatting /ram0 for DOSFS
+Instantiating /ram0 as rawFs, device = 0x1
+Formatting...Retrieved old volume params with %38 confidence:
+Volume Parameters: FAT type: FAT32, sectors per cluster 0
+  0 FAT copies, 0 clusters, 0 sectors per FAT
+  Sectors reserved 0, hidden 0, FAT sectors 0
+  Root dir entries 0, sysId (null)  , serial number 0
+  Label:"           " ...
+Disk with 16384 sectors of 512 bytes will be formatted with:
+Volume Parameters: FAT type: FAT16, sectors per cluster 2
+  2 FAT copies, 8143 clusters, 32 sectors per FAT
+  Sectors reserved 1, hidden 0, FAT sectors 64
+  Root dir entries 512, sysId VXDOS16 , serial number 0
+  Label:"           " ...
+OK.
+ 
+ _________            _________
+ \77777777\          /77777777/
+  \77777777\        /77777777/
+   \77777777\      /77777777/
+    \77777777\    /77777777/
+     \77777777\   \7777777/
+      \77777777\   \77777/              VxWorks 7
+       \77777777\   \777/
+        \77777777\   \7/     Core Kernel version: 1.2.2.1
+         \77777777\   -      Build date: Sep 14 2017 09:05:11
+          \77777777\
+           \7777777/         Copyright Wind River Systems, Inc.
+            \77777/   -                 1984-2017
+             \777/   /7\
+              \7/   /777\
+               -   -------
+
+                   Board: SIMLINUX board
+          OS Memory Size: 124MB
+        ED&R Policy Mode: Deployed
+  Application Mode Agent: Started (always)
+         Stop Mode Agent: Started (always)
+
+Loading symbol table from ip-172-31-28-22:/media/jbabu/WindriverVx7/deploy/vxWorks.sym ...done
+
+-> ifconfig "simnet0 192.168.10.7  netmask 255.255.0.0 up"
+value = 0 = 0x0
+-> ifconfig "simnet1 10.10.1.4  netmask 255.255.0.0 up"
+value = 0 = 0x0
+-> ls
+nvram.vxWorks7 
+vxWorks.sym 
+TC0204s 
+TC0203s 
+nvram.vxWorks0 
+nvram.vxWorks1 
+TC1004s 
+TC0202s 
+TC1004c1 
+TC1002c1 
+. 
+nvram.vxWorks9 
+TC0203c1 
+TC1002c2 
+TC0204c1 
+TC0201c2 
+TC0202c1 
+TC1101s1 
+TC1004c2 
+TC1101s2 
+.. 
+bc.out 
+TC0201c1 
+nvram.vxWorks3 
+nvram.vxWorks6 
+TC1003c1 
+TC1003s 
+TC0202c2 
+TC0204c2 
+vxWorks 
+TC1002s 
+nvram.vxWorks5 
+TC1003c2 
+nvram.vxWorks2 
+bs.out 
+TC0201s 
+nvram.vxWorks4 
+TC0203c2 
+value = 0 = 0x0
+-> ld <bs.out
+value = -2001580000 = 0x88b25020 = ' '
+-> bs("192.168.0.0",7001)
+Broadcast server listening on port 7001
+<<< [192.168.10.5:54151]: msg001-
+>>> [192.168.10.5:54151]: msg001-reply from bserver
+<<< [192.168.10.5:54151]: msg002-hello from c1 fro tc1101
+>>> [192.168.10.5:54151]: msg002-reply from bserver
+<<< [192.168.10.5:54151]: msg003-firct message was a blank msg
+>>> [192.168.10.5:54151]: msg003-reply from bserver
