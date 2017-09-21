@@ -1,25 +1,5 @@
 
 
-U-Boot SPL 2013.01.01 (Feb 05 2014 - 08:46:12)
-BOARD : Altera SOCFPGA Cyclone V Board
-SDRAM: Initializing MMR registers
-SDRAM: Calibrating PHY
-SEQ.C: Preparing to start memory calibration
-SEQ.C: CALIBRATION PASSED
-SDRAM: ECC Enabled
-ALTERA DWMMC: 0
-reading bootloader.bin
-reading bootloader.bin
-emac1: warning: using hard-coded address 00:07:ed:00:00:01
-
-
-
-
-
-
-
-
-
 
 
                             VxWorks System Boot
@@ -40,10 +20,9 @@ Creation date: Nov 12 2014 10:27:47
 
 
 Press any key to stop auto-boot...
- 7 6 5 4 3 2 1
-auto-booting...
+ 7 6 5 4 3@
 
-
+[VxWorks Boot]: 
 boot device          : emac
 unit number          : 1 
 processor number     : 0 
@@ -71,7 +50,7 @@ Target Name: vxTarget
       \77777777\   \77777/              VxWorks 7
        \77777777\   \777/
         \77777777\   \7/     Core Kernel version: 1.2.2.1
-         \77777777\   -      Build date: Sep 20 2017 07:00:47
+         \77777777\   -      Build date: Sep 20 2017 12:30:47
           \77777777\
            \7777777/         Copyright Wind River Systems, Inc.
             \77777/   -                 1984-2017
@@ -85,13 +64,16 @@ Target Name: vxTarget
 
 
  Adding 6757 symbols for standalone.
-ifconfig "emac0 192.168.3.5 netmask 255.255.255.0 up"
+
+-> ifconfig "emac0 192.168.10.5 netmask 255.255.255.0 up"
 value = 0 = 0x0
 -> bs
 Broadcast server listening on port 7001
-<<< [192.168.3.101:50362]: msg001-test msg fromc1
->>> [192.168.3.101:50362]: msg001-reply from bserver
-<<< [192.168.3.101:50362]: msg002-hello
->>> [192.168.3.101:50362]: msg002-reply from bserver
-<<< [192.168.3.101:50362]: msg003-hi
->>> [192.168.3.101:50362]: msg003-reply from bserver
+<<< [192.168.10.67:57974]: msg001-tets fromc2
+>>> [192.168.10.67:57974]: msg001-reply from bserver
+<<< [192.168.10.67:57974]: msg002-test
+>>> [192.168.10.67:57974]: msg002-reply from bserver
+<<< [192.168.10.68:61129]: msg001-tets
+>>> [192.168.10.68:61129]: msg003-reply from bserver
+<<< [192.168.10.65:62476]: msg001-test2
+>>> [192.168.10.65:62476]: msg004-reply from bserver

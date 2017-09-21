@@ -1,5 +1,4 @@
 
-
 U-Boot SPL 2013.01.01 (Feb 05 2014 - 08:46:12)
 BOARD : Altera SOCFPGA Cyclone V Board
 SDRAM: Initializing MMR registers
@@ -71,7 +70,7 @@ Target Name: vxTarget
       \77777777\   \77777/              VxWorks 7
        \77777777\   \777/
         \77777777\   \7/     Core Kernel version: 1.2.2.1
-         \77777777\   -      Build date: Sep 20 2017 07:00:47
+         \77777777\   -      Build date: Sep 20 2017 12:30:47
           \77777777\
            \7777777/         Copyright Wind River Systems, Inc.
             \77777/   -                 1984-2017
@@ -85,13 +84,12 @@ Target Name: vxTarget
 
 
  Adding 6757 symbols for standalone.
-ifconfig "emac0 192.168.3.5 netmask 255.255.255.0 up"
+
+-> ifconfig "emac0 192.168.10.5 netmask 255.255.255.0 up"
 value = 0 = 0x0
 -> bs
 Broadcast server listening on port 7001
-<<< [192.168.3.101:50362]: msg001-test msg fromc1
->>> [192.168.3.101:50362]: msg001-reply from bserver
-<<< [192.168.3.101:50362]: msg002-hello
->>> [192.168.3.101:50362]: msg002-reply from bserver
-<<< [192.168.3.101:50362]: msg003-hi
->>> [192.168.3.101:50362]: msg003-reply from bserver
+<<< [192.168.10.87:56697]: msg001-tets
+>>> [192.168.10.87:56697]: msg001-reply from bserver
+<<< [192.168.10.65:50010]: msg001-tets
+>>> [192.168.10.65:50010]: msg002-reply from bserver
