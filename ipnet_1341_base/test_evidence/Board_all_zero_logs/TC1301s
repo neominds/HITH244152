@@ -44,7 +44,7 @@ Target Name: vxTarget
 
  Adding 6757 symbols for standalone.
 
--> ifconfig "emac0 192.168.10.5 netmask 255.255.255.0 up"
+-> ifconfig "emac0 192.168.3.5 netmask 255.255.255.0 up"
 value = 0 = 0x0
 -> bs
 Broadcast server listening on port 7001
