@@ -70,14 +70,7 @@ simnet0	Link type:Ethernet  HWaddr 7a:7a:c0:a8:0a:44
 	RX bytes:788  TX bytes:1035
 
 value = 0 = 0x0
--> ld <bc.ou???
-C interp: unable to open 'bc.ou'.
-errno = 0x2 : S_errno_ENOENT.
--> ping (192.168.10.5"'?
-C interp: cannot use a floating point values as a function argument.
--> ping(192.168.10.5)
-C interp: cannot use a floating point values as a function argument.
--> ping("192.168.10.5")
+
 
 Pinging 192.168.10.5 (192.168.10.5) with 64 bytes of data:
 Reply from 192.168.10.5 bytes=64 ttl=64 seq=0 time<1ms

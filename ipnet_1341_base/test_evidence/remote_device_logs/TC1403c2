@@ -5,7 +5,6 @@ Physical Base Address: 0x60000000
 Physical Top  Address: 0x68000000    Physical Size: 0x08000000 (128Mb)
 Loading...
 0x3c8004 + 0x4356c
-Network Daemon attachment failed (Could not connect to vxsimnetd).
 Instantiating /ram0 as rawFs,  device = 0x1
 Formatting /ram0 for DOSFS
 Instantiating /ram0 as rawFs, device = 0x1
@@ -22,7 +21,6 @@ Volume Parameters: FAT type: FAT16, sectors per cluster 2
   Root dir entries 512, sysId VXDOS16 , serial number 0
   Label:"           " ...
 OK.
-ERROR: ipcom_drv_eth_init: drvname:simnet, drvunit: 0
  
  _________            _________
  \77777777\          /77777777/
@@ -56,16 +54,25 @@ lo0	Link type:Local loopback
 	inet6 unicast ::1  prefixlen 128
 	UP RUNNING LOOPBACK MULTICAST NOARP ALLMULTI 
 	MTU:1500  metric:1  VR:0  ifindex:1
-	RX packets:0 mcast:0 errors:0 dropped:0
-	TX packets:0 mcast:0 errors:0
+	RX packets:2 mcast:0 errors:0 dropped:0
+	TX packets:2 mcast:0 errors:0
 	collisions:0 unsupported proto:0
-	RX bytes:0  TX bytes:0
+	RX bytes:356  TX bytes:356
+
+simnet0	Link type:Ethernet  HWaddr 7a:7a:c0:a8:0a:41
+	inet 192.168.10.67  mask 255.255.255.0  broadcast 192.168.10.255
+	inet6 unicast fe80::787a:c0ff:fea8:a41%simnet0  prefixlen 64  automatic
+	UP RUNNING SIMPLEX BROADCAST MULTICAST 
+	MTU:1500  metric:1  VR:0  ifindex:2
+	RX packets:8 mcast:0 errors:0 dropped:5
+	TX packets:10 mcast:5 errors:0
+	collisions:0 unsupported proto:0
+	RX bytes:1512  TX bytes:956
 
 value = 0 = 0x0
 -> ld <bc.out
-value = -2003951552 = 0x888e2040 = '@'
+value = -2003346344 = 0x88975c58 = 'X'
 -> bc("192.168.10.0",7001)
-Ready>tets
-sendto broadcast failed : S_errno_ENETUNREACH
-value = -1 = 0xffffffff
--> 
+Ready>test
+>>> [192.168.10.0:7001] msg001-test
+Ready>
